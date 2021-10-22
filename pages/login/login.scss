@@ -1,0 +1,52 @@
+.loginPg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .half {
+    padding-top: 93px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .header {
+      font-family: Lato;
+      h4 {
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 30px;
+        margin-bottom: 60px;
+      }
+    }
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      input {
+        font-size: 12px;
+        font-family: Lato;
+        margin-bottom: 51.5px;
+        width: 206.5px;
+        background: none;
+        border: none;
+        border-bottom: 3px solid black;
+      }
+      input::placeholder {
+        color: black;
+      }
+      input[type="button"] {
+        height: 52px;
+        background-color: $yellow;
+        min-width: 200px;
+        border-radius: 25px;
+        border: none;
+      }
+    }
+  }
+}
