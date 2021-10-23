@@ -53,9 +53,37 @@ nav {
 }
 
 .mobile-nav {
-  background-color: cyan;
-  a {
-    font-size: 20px;
+  display: none;
+  // background-color: cyan;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  .mobile-menu {
+    // position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    height: 400px;
+
+    z-index: 7;
+    a {
+      font-size: 20px;
+    }
+  }
+  .mobile-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: hotpink;
+    z-index: 1;
   }
 }
 

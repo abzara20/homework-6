@@ -7,18 +7,21 @@
 
   .half {
     padding-top: 93px;
-    width: 25%;
+    width: 206.5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    margin: 0 120px;
     margin-bottom: 114px;
 
     .header {
-      width: 206.5px;
-      font-family: Lato-light;
+      width: 100%;
+      font-family: Lato;
       h4 {
+        font-family: Lato-italic;
+        font-weight: lighter;
+        font-size: 12px;
         margin-bottom: 0;
       }
       h1 {
