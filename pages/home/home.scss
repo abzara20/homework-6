@@ -6,7 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding-bottom: 203px;
+  padding-top: 107px;
   .circle-holder {
     margin-top: 90px;
     height: 100%;
@@ -20,6 +21,8 @@
       background-color: $lpink;
       padding: 65.5px 31px;
       border-radius: 84px;
+
+      box-shadow: $shadow-1, $shadow-2;
 
       display: flex;
       align-items: center;
@@ -46,6 +49,8 @@
       border-radius: 179px;
       padding: 100px;
 
+      box-shadow: $shadow-1, $shadow-2;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -66,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .home {
     .circle-holder {
       .little-circle {
@@ -77,9 +82,12 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 360px) {
   .home {
+    max-width: 360px;
+
     .circle-holder {
+      max-width: 360px;
       .little-circle {
         height: 121.04px;
         width: 121.04px;

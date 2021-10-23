@@ -13,8 +13,11 @@
     justify-content: center;
     flex-direction: column;
 
+    margin-bottom: 114px;
+
     .header {
-      font-family: Lato;
+      width: 206.5px;
+      font-family: Lato-light;
       h4 {
         margin-bottom: 0;
       }
@@ -23,6 +26,7 @@
         margin-bottom: 60px;
       }
     }
+
     .form {
       display: flex;
       align-items: center;
@@ -44,9 +48,29 @@
         height: 52px;
         background-color: $yellow;
         min-width: 200px;
+        margin-bottom: 0;
         border-radius: 25px;
         border: none;
+
+        font-family: Caveat;
+        font-size: 25px;
+
+        box-shadow: $shadow-1, $shadow-2;
       }
+    }
+  }
+
+  #signUp {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loginPg {
+    flex-direction: column;
+
+    #signUp {
+      padding-top: 0;
     }
   }
 }

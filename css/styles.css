@@ -23,6 +23,10 @@
   src: url(../css/fonts/Lato-Regular.ttf);
 }
 @font-face {
+  font-family: Lato-light;
+  src: url(../css/fonts/Lato-Light.ttf);
+}
+@font-face {
   font-family: Lato-italic;
   src: url(../css/fonts/Lato-Italic.ttf);
 }
@@ -119,6 +123,8 @@ nav .links #login {
   background-color: #ffd972;
   text-align: center;
   border-radius: 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 nav .mobile {
   display: none;
@@ -185,7 +191,7 @@ footer .social {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   footer {
     font-size: 10px;
   }
@@ -194,7 +200,7 @@ footer .social {
     font-weight: bold;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 360px) {
   footer {
     padding: 0 20px 30px 20px;
     -webkit-box-pack: justify;
@@ -243,6 +249,8 @@ footer .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 203px;
+  padding-top: 107px;
 }
 .home .circle-holder {
   margin-top: 90px;
@@ -263,6 +271,8 @@ footer .social {
   background-color: #fcbcb8;
   padding: 65.5px 31px;
   border-radius: 84px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,6 +298,8 @@ footer .social {
   background-color: #ffd972;
   border-radius: 179px;
   padding: 100px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,13 +326,19 @@ footer .social {
   font-size: 13px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .home .circle-holder .little-circle {
     margin-left: 180px;
     margin-top: -400px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 360px) {
+  .home {
+    max-width: 360px;
+  }
+  .home .circle-holder {
+    max-width: 360px;
+  }
   .home .circle-holder .little-circle {
     height: 121.04px;
     width: 121.04px;
@@ -369,9 +387,11 @@ footer .social {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 114px;
 }
 .loginPg .half .header {
-  font-family: Lato;
+  width: 206.5px;
+  font-family: Lato-light;
 }
 .loginPg .half .header h4 {
   margin-bottom: 0;
@@ -423,6 +443,26 @@ footer .social {
   height: 52px;
   background-color: #ffd972;
   min-width: 200px;
+  margin-bottom: 0;
   border-radius: 25px;
   border: none;
+  font-family: Caveat;
+  font-size: 25px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.loginPg #signUp {
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .loginPg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .loginPg #signUp {
+    padding-top: 0;
+  }
 }
