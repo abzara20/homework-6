@@ -52,6 +52,13 @@ nav {
   }
 }
 
+.mobile-nav {
+  background-color: cyan;
+  a {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   nav {
     .links {

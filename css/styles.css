@@ -133,6 +133,13 @@ nav .fa-bars {
   font-size: 20px;
 }
 
+.mobile-nav {
+  background-color: cyan;
+}
+.mobile-nav a {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   nav .links {
     display: none;
