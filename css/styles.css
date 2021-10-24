@@ -150,6 +150,7 @@ nav .fa-bars {
   z-index: 5;
 }
 .mobile-nav .mobile-menu {
+  font-family: Lato;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,17 +164,19 @@ nav .fa-bars {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 400px;
+  height: 300px;
   z-index: 7;
 }
 .mobile-nav .mobile-menu a {
   font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 .mobile-nav .mobile-bg {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: hotpink;
+  background-color: #a7e8bd;
   z-index: 1;
 }
 

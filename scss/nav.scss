@@ -54,7 +54,6 @@ nav {
 
 .mobile-nav {
   display: none;
-  // background-color: cyan;
   position: fixed;
 
   display: flex;
@@ -65,24 +64,26 @@ nav {
   width: 100%;
   z-index: 5;
   .mobile-menu {
-    // position: absolute;
+    font-family: Lato;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
 
-    height: 400px;
+    height: 300px;
 
     z-index: 7;
     a {
       font-size: 20px;
+      text-decoration: none;
+      color: black;
     }
   }
   .mobile-bg {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: hotpink;
+    background-color: $mint;
     z-index: 1;
   }
 }
