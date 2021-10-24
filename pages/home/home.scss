@@ -85,8 +85,9 @@
 @media screen and (max-width: 360px) {
   .home {
     max-width: 360px;
-
+    padding-bottom: 124px;
     .circle-holder {
+      margin-top: 40px;
       max-width: 360px;
       .little-circle {
         height: 121.04px;

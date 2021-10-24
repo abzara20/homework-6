@@ -19,7 +19,6 @@ function initListeners() {
   $(".mobile").click(function (e) {
     gsap.to(".mobile-nav", {
       duration: 0.5,
-      x: 0,
       opacity: 1,
     });
   });
@@ -36,12 +35,11 @@ function initListeners() {
 function hideMenu() {
   gsap.to(".mobile-nav", {
     duration: 0.5,
-    x: 300,
     opacity: 0,
   });
 }
 
 $("document").ready(function () {
   initListeners();
-  gsap.set($(".mobile-nav"), { opacity: 0, x: 300 });
+  gsap.set($(".mobile-nav"), { opacity: 0 });
 });

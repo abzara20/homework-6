@@ -64,7 +64,7 @@
   }
 
   #signUp {
-    margin-bottom: 150px;
+    margin-bottom: 81px;
   }
 }
 
@@ -74,6 +74,15 @@
 
     #signUp {
       padding-top: 0;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .loginPg {
+    #signUp {
+      padding-bottom: 0;
     }
   }
 }
