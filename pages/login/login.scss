@@ -63,12 +63,12 @@
     }
   }
 
-  #signUp {
-    margin-bottom: 81px;
-  }
+  // #signUp {
+  //   margin-bottom: 81px;
+  // }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .loginPg {
     flex-direction: column;
 
@@ -81,6 +81,7 @@
 
 @media screen and (max-width: 370px) {
   .loginPg {
+    padding-bottom: 81px;
     #signUp {
       padding-bottom: 0;
     }
