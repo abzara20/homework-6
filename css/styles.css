@@ -235,6 +235,10 @@ footer .social {
           justify-content: space-between;
 }
 
+.mobile-footer {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   footer {
     font-size: 10px;
@@ -244,40 +248,63 @@ footer .social {
     font-weight: bold;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
   footer {
-    padding: 0 20px 30px 20px;
+    padding: 0 20px;
+  }
+  footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .row--top {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: relative;
+    width: 100%;
   }
-  footer #copyright {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  footer .social {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  footer .row .social {
+    width: 60px;
   }
   footer .footer-links {
     width: 100%;
-    position: absolute;
-    padding: 10px 20px 0 20px;
-    bottom: 20px;
+    padding: 10px 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
   }
   footer .footer-links a {
-    margin: 0 6px;
+    margin: 0 6px 5px 6px;
   }
   footer .footer-links .login {
     font-family: Lato-italic;
     font-weight: normal;
+    margin: 0 6px 5px 6px;
+  }
+
+  .screen-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .home {
