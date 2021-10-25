@@ -1,6 +1,6 @@
 .home {
   height: 100%;
-  width: 442px;
+  max-width: 442px;
   margin: 0 auto;
   // background-color: aqua;
   display: flex;
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .home {
     .circle-holder {
       .little-circle {
@@ -82,9 +82,9 @@
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 425px) {
   .home {
-    max-width: 360px;
+    // max-width: 360px;
     padding-bottom: 124px;
     .circle-holder {
       margin-top: 40px;

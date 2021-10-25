@@ -309,7 +309,7 @@ footer .social {
 }
 .home {
   height: 100%;
-  width: 442px;
+  max-width: 442px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,15 +397,14 @@ footer .social {
   font-size: 13px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .home .circle-holder .little-circle {
     margin-left: 180px;
     margin-top: -400px;
   }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 425px) {
   .home {
-    max-width: 360px;
     padding-bottom: 124px;
   }
   .home .circle-holder {
